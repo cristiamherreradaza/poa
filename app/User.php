@@ -47,29 +47,4 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
-
-    public function categoria()
-    {
-        return $this->belongsTo('App\Categoria', 'categoria_id');
-    }
-
-    public function evento()
-    {
-        return $this->belongsTo('App\Evento', 'evento_id');
-    }
-
-    public function eventos()
-    {
-        return $this->hasMany('App\Evento');
-    }
-
-    public function asistencias()
-    {
-        return $this->hasMany('App\Asistencia');
-    }
-
-    public function pagos()
-    {
-        return $this->hasMany('App\Pago');
-    }
 }

@@ -40,5 +40,6 @@ Route::get('User/ajax_listado', 'UserController@ajax_listado');
 Route::get('User/edita/{id}', 'UserController@edita');
 Route::get('User/elimina/{id}', 'UserController@elimina');
 
-// EVENTOS
-Route::get('Raza/listado', 'RazaController@listado');
+// TIPOS INSUMOS
+Route::get('TiposInsumo/listado', 'TiposInsumoController@listado');
+Route::post('TiposInsumo/guarda', 'TiposInsumoController@guarda');
