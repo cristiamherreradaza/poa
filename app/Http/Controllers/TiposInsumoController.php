@@ -32,4 +32,10 @@ class TiposInsumoController extends Controller
 
         return redirect('TiposInsumo/listado');
     }
+
+    public function elimina(Request $request, $tipo_id)
+    {
+        TiposInsumo::destroy($tipo_id);
+        return redirect('TiposInsumo/listado');
+    }
 }

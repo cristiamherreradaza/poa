@@ -13,7 +13,7 @@
     <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">NUEVO TIPO INSUMO</h5>
+                <h5 class="modal-title" id="exampleModalLabel">FORMULARIO TIPO INSUMO</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <i aria-hidden="true" class="ki ki-close"></i>
                 </button>
@@ -62,7 +62,7 @@
 			<div class="card-toolbar">
 				<!--begin::Button-->
 				<a href="#" class="btn btn-primary font-weight-bolder" onclick="nuevo()">
-					<i class="fa fa-plus-square"></i> Nuevo Tipo Insumo
+					<i class="fa fa-plus-square"></i> NUEVO TIPO INSUMO
 				</a>
 				<!--end::Button-->
 			</div>
@@ -90,9 +90,9 @@
 									<button type="button" class="btn btn-icon btn-warning" onclick="edita('{{ $ti->id }}', '{{ $ti->nombre }}', '{{ $ti->abreviatura }}')">
 										<i class="flaticon2-edit"></i>
 									</button>
-									<a href="#" class="btn btn-icon btn-danger">
+									<button type="button" class="btn btn-icon btn-danger" onclick="elimina('{{ $ti->id }}', '{{ $ti->nombre }}')">
 										<i class="flaticon2-cross"></i>
-									</a>
+									</button>
 								</td>
 							</tr>
 						@empty
@@ -126,6 +126,7 @@
     	function nuevo()
     	{
 			// pone los inputs vacios
+			$("#tipo_id").val('');
 			$("#nombre").val('');
 			$("#abreviatura").val('');
 			// abre el modal
@@ -145,10 +146,15 @@
 
     	function crear()
     	{
+			// verificamos que el formulario este correcto
     		if($("#formulario-tipos")[0].checkValidity()){
+				// enviamos el formulario
     			$("#formulario-tipos").submit();
-				Swal.fire("Good job!", "You clicked the button!", "success");
+				// mostramos la alerta
+				Swal.fire("Excelente!", "Registro Guardado!", "success");
     		}else{
+				// de lo contrario mostramos los errores
+				// del formulario
     			$("#formulario-tipos")[0].reportValidity()
     		}
 
@@ -156,6 +162,7 @@
 
 		function elimina(id, nombre)
         {
+			// mostramos la pregunta en el alert
             Swal.fire({
                 title: "Quieres eliminar "+nombre,
                 text: "Ya no podras recuperarlo!",
@@ -165,9 +172,10 @@
                 cancelButtonText: "No, cancelar!",
                 reverseButtons: true
             }).then(function(result) {
+				// si pulsa boton si
                 if (result.value) {
 
-                    window.location.href = "{{ url('User/elimina') }}/"+id;
+                    window.location.href = "{{ url('TiposInsumo/elimina') }}/"+id;
 
                     Swal.fire(
                         "Borrado!",

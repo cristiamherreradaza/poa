@@ -43,3 +43,4 @@ Route::get('User/elimina/{id}', 'UserController@elimina');
 // TIPOS INSUMOS
 Route::get('TiposInsumo/listado', 'TiposInsumoController@listado');
 Route::post('TiposInsumo/guarda', 'TiposInsumoController@guarda');
+Route::get('TiposInsumo/elimina/{tipo_id}', 'TiposInsumoController@elimina');
