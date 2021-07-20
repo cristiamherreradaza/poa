@@ -16,8 +16,16 @@ class TiposInsumoController extends Controller
 
     public function guarda(Request $request)
     {
-        // dd($request->all());
-        $tipo              = new TiposInsumo();
+        // preguntamos si tiene tipo id
+        // para editar o crear un registro
+        if($request->input('tipo_id') == null){
+            // creamos un nuevo registro
+            $tipo = new TiposInsumo();
+        }else{
+            // editamos un registro con su tipo_id
+            $tipo = TiposInsumo::find($request->input('tipo_id'));
+        }
+
         $tipo->nombre      = $request->input('nombre');
         $tipo->abreviatura = $request->input('abreviatura');
         $tipo->save();

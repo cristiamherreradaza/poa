@@ -27,6 +27,7 @@
                 			<div class="form-group">
                 			    <label for="exampleInputPassword1">Nombre
                 			    <span class="text-danger">*</span></label>
+                			    <input type="hidden" class="form-control" id="tipo_id" name="tipo_id" />
                 			    <input type="text" class="form-control" id="nombre" name="nombre" required />
                 			</div>
                 		</div>
@@ -85,7 +86,14 @@
 								<td>{{ $ti->id }}</td>
 								<td>{{ $ti->nombre }}</td>
 								<td>{{ $ti->abreviatura }}</td>
-								<td></td>
+								<td>
+									<button type="button" class="btn btn-icon btn-warning" onclick="edita('{{ $ti->id }}', '{{ $ti->nombre }}', '{{ $ti->abreviatura }}')">
+										<i class="flaticon2-edit"></i>
+									</button>
+									<a href="#" class="btn btn-icon btn-danger">
+										<i class="flaticon2-cross"></i>
+									</a>
+								</td>
 							</tr>
 						@empty
 							<h3 class="text-danger">NO EXISTEN RAZAS</h3>
@@ -108,14 +116,30 @@
     	$(function () {
     	    $('#tabla-insumos').DataTable({
     	        language: {
-    	            url: '{{ asset('datatableEs.json') }}'
+    	            url: '{{ asset('datatableEs.json') }}',
     	        },
+				order: [[ 0, "desc" ]]
     	    });
 
     	});
 
     	function nuevo()
     	{
+			// pone los inputs vacios
+			$("#nombre").val('');
+			$("#abreviatura").val('');
+			// abre el modal
+    		$("#modalTipo").modal('show');
+    	}
+
+		function edita(id, nombre, abreviatura)
+    	{
+			// colocamos valores en los inputs
+			$("#tipo_id").val(id);
+			$("#nombre").val(nombre);
+			$("#abreviatura").val(abreviatura);
+
+			// mostramos el modal
     		$("#modalTipo").modal('show');
     	}
 
@@ -129,18 +153,6 @@
     		}
 
     	}
-
-
-		function edita(id)
-		{
-			window.location.href = "{{ url('User/edita') }}/"+id;
-		}
-
-		function cuotas(id)
-		{
-			window.location.href = "{{ url('User/pagos') }}/"+id;
-		}
-
 
 		function elimina(id, nombre)
         {
