@@ -10,10 +10,10 @@
 
 <!-- Modal-->
 <div class="modal fade" id="modalTipo" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="staticBackdrop" aria-hidden="true">
-    <div class="modal-dialog" role="document">
+    <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Nuevo tipo</h5>
+                <h5 class="modal-title" id="exampleModalLabel">NUEVO TIPO INSUMO</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <i aria-hidden="true" class="ki ki-close"></i>
                 </button>
@@ -43,8 +43,8 @@
                 </form>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-light-primary font-weight-bold" data-dismiss="modal">Cerrar</button>
-                <button type="button" class="btn btn-primary font-weight-bold" onclick="crear()">Guardar</button>
+                <button type="button" class="btn btn-light-dark font-weight-bold" data-dismiss="modal">Cerrar</button>
+                <button type="button" class="btn btn-success font-weight-bold" onclick="crear()">Guardar</button>
             </div>
         </div>
     </div>
@@ -61,7 +61,7 @@
 			<div class="card-toolbar">
 				<!--begin::Button-->
 				<a href="#" class="btn btn-primary font-weight-bolder" onclick="nuevo()">
-					<i class="fa fa-plus"></i> Nuevo Tipo Insumo
+					<i class="fa fa-plus-square"></i> Nuevo Tipo Insumo
 				</a>
 				<!--end::Button-->
 			</div>
