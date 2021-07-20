@@ -44,3 +44,9 @@ Route::get('User/elimina/{id}', 'UserController@elimina');
 Route::get('TiposInsumo/listado', 'TiposInsumoController@listado');
 Route::post('TiposInsumo/guarda', 'TiposInsumoController@guarda');
 Route::get('TiposInsumo/elimina/{tipo_id}', 'TiposInsumoController@elimina');
+
+// PARTIDAS
+Route::get('Partida/listado', 'PartidaController@listado');
+Route::post('Partida/guarda', 'PartidaController@guarda');
+Route::get('Partida/elimina/{tipo_id}', 'PartidaController@elimina');
+
