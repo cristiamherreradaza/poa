@@ -50,3 +50,8 @@ Route::get('Partida/listado', 'PartidaController@listado');
 Route::post('Partida/guarda', 'PartidaController@guarda');
 Route::get('Partida/elimina/{tipo_id}', 'PartidaController@elimina');
 
+// ORGANISMO FINANCIADOR
+Route::get('OrganismoFinanciador/listado', 'OrganismoFinanciadorController@listado');
+Route::post('OrganismoFinanciador/guarda', 'OrganismoFinanciadorController@guarda');
+Route::get('OrganismoFinanciador/elimina/{tipo_id}', 'OrganismoFinanciadorController@elimina');
+

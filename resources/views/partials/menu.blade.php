@@ -109,6 +109,15 @@
 								<span class="menu-text">Partidas</span>
 							</a>
 						</li>
+
+						<li class="menu-item" aria-haspopup="true">
+							<a href="{{ url('OrganismoFinanciador/listado') }}" class="menu-link">
+								<i class="menu-bullet menu-bullet-dot">
+									<span></span>
+								</i>
+								<span class="menu-text">Organismo Financiador</span>
+							</a>
+						</li>
 			
 					</ul>
 				</div>
