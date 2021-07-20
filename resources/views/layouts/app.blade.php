@@ -6,7 +6,7 @@
 	<head>
 		<meta charset="utf-8" />
 		@yield('metadatos')
-		<title>KENNEL CLUB BOLIVIANO</title>
+		<title>POA</title>
 		<meta name="description" content="Base form control examples" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 		<link rel="canonical" href="https://keenthemes.com/metronic" />

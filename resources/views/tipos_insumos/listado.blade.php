@@ -13,7 +13,7 @@
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Modal Title</h5>
+                <h5 class="modal-title" id="exampleModalLabel">Nuevo tipo</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <i aria-hidden="true" class="ki ki-close"></i>
                 </button>
@@ -23,7 +23,7 @@
                 	@csrf
                 	<div class="row">
 
-                		<div class="col-md-6">
+                		<div class="col-md-8">
                 			<div class="form-group">
                 			    <label for="exampleInputPassword1">Nombre
                 			    <span class="text-danger">*</span></label>
@@ -31,9 +31,9 @@
                 			</div>
                 		</div>
 
-                		<div class="col-md-6">
+                		<div class="col-md-4">
                 			<div class="form-group">
-                			    <label for="exampleInputPassword1">Nombre
+                			    <label for="exampleInputPassword1">Abrebiatura
                 			    <span class="text-danger">*</span></label>
                 			    <input type="text" class="form-control" id="abreviatura" name="abreviatura" required />
                 			</div>
@@ -123,6 +123,7 @@
     	{
     		if($("#formulario-tipos")[0].checkValidity()){
     			$("#formulario-tipos").submit();
+				Swal.fire("Good job!", "You clicked the button!", "success");
     		}else{
     			$("#formulario-tipos")[0].reportValidity()
     		}

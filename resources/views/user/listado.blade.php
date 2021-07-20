@@ -9,7 +9,7 @@
 	<div class="card card-custom gutter-b">
 		<div class="card-header flex-wrap py-3">
 			<div class="card-title">
-				<h3 class="card-label">RAZAS
+				<h3 class="card-label">USUARIOS
 				</h3>
 			</div>
 			<div class="card-toolbar">
@@ -28,7 +28,7 @@
 							</g>
 						</svg>
 						<!--end::Svg Icon-->
-					</span>Nueva Raza</a>
+					</span>Nuevo</a>
 				<!--end::Button-->
 			</div>
 		</div>
@@ -41,18 +41,21 @@
 						<tr>
 							<th>ID</th>
 							<th>Nombre</th>
-							<th>Descripcion</th>
-							<th>Actions</th>
+							<th>Email</th>
+							<th></th>
 						</tr>
 					</thead>
 					<tbody>
-						@forelse ($collection as $item)
+						@forelse ($usuarios as $u)
 							<tr>
+								<th>{{ $u->id }}</th>
+								<th>{{ $u->name }}</th>
+								<th>{{ $u->email }}</th>
 								<th></th>
 							</tr>
 						@empty
 							<h3 class="text-danger">NO EXISTEN RAZAS</h3>
-						@endforeach
+						@endforelse
 					</tbody>
 					<tbody>
 					</tbody>

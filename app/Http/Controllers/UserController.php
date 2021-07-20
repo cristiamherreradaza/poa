@@ -19,7 +19,8 @@ class UserController extends Controller
 
     public function listado()
     {
-        return view('user.listado');
+        $usuarios = User::all();
+        return view('user.listado')->with(compact('usuarios'));
     }
 
     public function ajax_listado()
