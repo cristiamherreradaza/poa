@@ -57,3 +57,9 @@ Route::get('OrganismoFinanciador/elimina/{tipo_id}', 'OrganismoFinanciadorContro
 
 // PROYECTO
 Route::get('Proyecto/registro', 'ProyectoController@registro');
+
+// TIPOS OPERECIONES
+Route::get('TiposOperacion/listado', 'TiposOperacionController@listado');
+Route::post('TiposOperacion/guarda', 'TiposOperacionController@guarda');
+Route::get('TiposOperacion/elimina/{tipo_id}', 'TiposOperacionController@elimina');
+
