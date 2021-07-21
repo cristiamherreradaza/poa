@@ -63,3 +63,8 @@ Route::get('TiposOperacion/listado', 'TiposOperacionController@listado');
 Route::post('TiposOperacion/guarda', 'TiposOperacionController@guarda');
 Route::get('TiposOperacion/elimina/{tipo_id}', 'TiposOperacionController@elimina');
 
+// TIPOS GASTOS
+Route::get('TiposGasto/listado', 'TiposGastoController@listado');
+Route::post('TiposGasto/guarda', 'TiposGastoController@guarda');
+Route::get('TiposGasto/elimina/{tipo_id}', 'TiposGastoController@elimina');
+

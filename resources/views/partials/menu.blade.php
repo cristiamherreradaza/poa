@@ -118,6 +118,24 @@
 								<span class="menu-text">Organismo Financiador</span>
 							</a>
 						</li>
+
+						<li class="menu-item" aria-haspopup="true">
+							<a href="{{ url('TiposOperacion/listado') }}" class="menu-link">
+								<i class="menu-bullet menu-bullet-dot">
+									<span></span>
+								</i>
+								<span class="menu-text">Tipos de Operacion</span>
+							</a>
+						</li>
+
+						<li class="menu-item" aria-haspopup="true">
+							<a href="{{ url('TiposGasto/listado') }}" class="menu-link">
+								<i class="menu-bullet menu-bullet-dot">
+									<span></span>
+								</i>
+								<span class="menu-text">Tipos de Gasto</span>
+							</a>
+						</li>
 			
 					</ul>
 				</div>
