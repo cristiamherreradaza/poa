@@ -57,3 +57,18 @@ Route::get('OrganismoFinanciador/elimina/{tipo_id}', 'OrganismoFinanciadorContro
 
 // PROYECTO
 Route::get('Proyecto/registro', 'ProyectoController@registro');
+
+// TIPOS OPERECIONES
+Route::get('TiposOperacion/listado', 'TiposOperacionController@listado');
+Route::post('TiposOperacion/guarda', 'TiposOperacionController@guarda');
+Route::get('TiposOperacion/elimina/{tipo_id}', 'TiposOperacionController@elimina');
+
+// TIPOS GASTOS
+Route::get('TiposGasto/listado', 'TiposGastoController@listado');
+Route::post('TiposGasto/guarda', 'TiposGastoController@guarda');
+Route::get('TiposGasto/elimina/{tipo_id}', 'TiposGastoController@elimina');
+
+// PROGRAMAS
+Route::get('Programa/listado', 'ProgramaController@listado');
+Route::post('Programa/guarda', 'ProgramaController@guarda');
+Route::get('Programa/elimina/{tipo_id}', 'ProgramaController@elimina');
