@@ -61,60 +61,132 @@
                         </div>
 
                     </div>
+                    <br />
 
-                    <div class="row">
-                        <div class="col-md-5">
-                            <div class="form-group">
-                                <label for="exampleInputPassword1">Nombre
-                                    <span class="text-danger">*</span></label>
-                                <input type="text" class="form-control" id="nombre" name="nombre" required />
-                            </div>
-                        </div>
-                        <div class="col-md-2">
-                            <div class="form-group">
-                                <label for="exampleInputPassword1">Carnet
-                                    <span class="text-danger">*</span></label>
-                                <input type="number" class="form-control" id="ci" name="ci" required />
-                            </div>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="form-group">
-                                <label for="exampleInputPassword1">Email
-                                    <span class="text-danger">*</span></label>
-                                <input type="email" class="form-control" id="email" name="email" required />
-                            </div>
-                        </div>
-                        <div class="col-md-2">
-                            <div class="form-group">
-                                <label for="exampleInputPassword1">Fecha Nacimiento
-                                    <span class="text-danger">*</span></label>
-                                <input type="date" class="form-control" id="fecha_nacimiento" name="fecha_nacimiento"
-                                    required />
-                            </div>
-                        </div>
-                    </div>
+                    <div id="bloque-carga">
 
-                    <div class="row">
-                        <div class="col-md-7">
-                            <div class="form-group">
-                                <label for="exampleInputPassword1">Direccion
-                                    <span class="text-danger">*</span></label>
-                                <input type="text" class="form-control" id="direccion" name="direccion" required />
-                            </div>
-                        </div>
+                        <div class="row">
 
-                        <div class="col-md-5">
-                            <div class="form-group">
-                                <label for="exampleInputPassword1">Telefonos
-                                    <span class="text-danger">*</span></label>
-                                <input type="text" class="form-control" id="celulares" name="celulares" required />
+                            <div class="col-md-8">
+
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <label for="exampleInputPassword1">
+                                                NOMBRE DEL PROYECTO, PROGRAMA Y OPERACION INSTITUCIONAL
+                                                <span class="text-danger">*</span>
+                                            </label>
+                                            <textarea class="form-control" rows="3"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label for="exampleInputPassword1">TIPO OPERACION
+                                                <span class="text-danger">*</span></label>
+                                            <input type="number" class="form-control" id="ci" name="ci" required />
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label for="exampleInputPassword1">PONDERACION
+                                                <span class="text-danger">*</span></label>
+                                            <input type="email" class="form-control" id="email" name="email" required />
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label for="exampleInputPassword1">CODIGO SISIN
+                                                <span class="text-danger">*</span></label>
+                                            <input type="text" class="form-control" id="email" name="email" required />
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="row">
+                                
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="exampleInputPassword1">FECHA INICIAL DEL PROYECTO
+                                                <span class="text-danger">*</span></label>
+                                            <input type="date" class="form-control" id="fecha_nacimiento" name="fecha_nacimiento" required />
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="exampleInputPassword1">FECHA FINAL PROYECTO
+                                                <span class="text-danger">*</span></label>
+                                            <input type="date" class="form-control" id="fecha_nacimiento" name="fecha_nacimiento" required />
+                                        </div>
+                                    </div>
+                                
+                                </div>
                             </div>
+                            <div class="col-md-4">
+
+                                <div class="row">
+
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <label for="exampleInputPassword1">PROGRAMA
+                                                <span class="text-danger">*</span></label>
+                                            <input type="text" class="form-control" id="email" name="email" required />
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <label for="exampleInputPassword1">PROYECTO
+                                                <span class="text-danger">*</span></label>
+                                            <input type="text" class="form-control" id="email" name="email" required />
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <label for="exampleInputPassword1">ACTIVIDAD
+                                                <span class="text-danger">*</span></label>
+                                            <input type="text" class="form-control" id="email" name="email" required />
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <hr>
+
+                            <div class="row">
+                            
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label for="exampleInputPassword1">PROGRAMA
+                                            <span class="text-danger">*</span></label>
+                                        <input type="text" class="form-control" id="email" name="email" required />
+                                    </div>
+                                </div>
+                                
+                            </div>
+
                         </div>
+                        
                     </div>
 
                     <div class="row">
                         <div class="col-md-6">
-                            <button type="button" class="btn btn-primary mr-2 btn-block"
+                            <button type="button" class="btn btn-success mr-2 btn-block"
                                 onclick="guarda()">Guardar</button>
                         </div>
                         <div class="col-md-6">

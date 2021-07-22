@@ -39,7 +39,7 @@
 						</svg>
 						<!--end::Svg Icon-->
 					</span>
-					<span class="menu-text">Usuarios</span>
+					<span class="menu-text">Proyectos</span>
 					<i class="menu-arrow"></i>
 				</a>
 				<div class="menu-submenu">
@@ -47,15 +47,15 @@
 					<ul class="menu-subnav">
 						<li class="menu-item menu-item-parent" aria-haspopup="true">
 							<span class="menu-link">
-								<span class="menu-text">Usuarios</span>
+								<span class="menu-text">Proyectos</span>
 							</span>
 						</li>
 						<li class="menu-item" aria-haspopup="true">
-							<a href="{{ url('User/listado') }}" class="menu-link">
+							<a href="{{ url('Proyecto/registro') }}" class="menu-link">
 								<i class="menu-bullet menu-bullet-dot">
 									<span></span>
 								</i>
-								<span class="menu-text">Listado</span>
+								<span class="menu-text">Registro</span>
 							</a>
 						</li>
 						
@@ -116,6 +116,15 @@
 									<span></span>
 								</i>
 								<span class="menu-text">Organismo Financiador</span>
+							</a>
+						</li>
+
+						<li class="menu-item" aria-haspopup="true">
+							<a href="{{ url('User/listado') }}" class="menu-link">
+								<i class="menu-bullet menu-bullet-dot">
+									<span></span>
+								</i>
+								<span class="menu-text">Usuarios</span>
 							</a>
 						</li>
 			
