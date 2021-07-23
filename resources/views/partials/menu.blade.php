@@ -120,13 +120,11 @@
 						</li>
 
 						<li class="menu-item" aria-haspopup="true">
-<<<<<<< HEAD
 							<a href="{{ url('User/listado') }}" class="menu-link">
 								<i class="menu-bullet menu-bullet-dot">
 									<span></span>
 								</i>
 								<span class="menu-text">Usuarios</span>
-=======
 							<a href="{{ url('TiposOperacion/listado') }}" class="menu-link">
 								<i class="menu-bullet menu-bullet-dot">
 									<span></span>
@@ -141,7 +139,6 @@
 									<span></span>
 								</i>
 								<span class="menu-text">Tipos de Gasto</span>
->>>>>>> 2f2a493bb39b4db4139a5aa7e3b5d86b90d8f30d
 							</a>
 						</li>
 			
